@@ -7,7 +7,7 @@
   <title>Ray M. Perry</title>
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
   <script src="https://unpkg.com/alpinejs" defer></script>
-  <script src="https://cdn.jsdelivr.net/gh/RaycatWhoDat/website@3ad255bbc/app.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/gh/RaycatWhoDat/website@master/app.min.js" defer></script>
 
   <style>
     [x-cloak] {
@@ -30,24 +30,51 @@
     .usn {
       user-select: none;
     }
+
+    .photo {
+      width: 250px;
+      height: 250px;
+    }
   </style>
 </head>
 
-<body class="flex flex-column baskerville">
-  <header class="flex justify-between items-center ph4 pv2 bg-black white">
-    <div class="logo">
-      <h1 class="light-blue">Ray M. Perry</h1>
+<body class="flex flex-column items-center baskerville">
+  <header class="flex justify-center items-center ph4 pv2 bg-near-black near-white w-100">
+    <div class="w-two-thirds flex justify-between">
+      <div class="logo">
+        <h1 class="">Ray M. Perry</h1>
+      </div>
+      <nav class="links flex justify-between items-center">
+        <a class="link pointer usn dim white pv2 ph3 mr3">Blog</a>
+        <a class="link pointer usn dim white bg-black ba bw1 br-pill pv2 ph3">Resume</a>
+      </nav>
     </div>
-    <nav class="links w-20 flex justify-between items-center">
-      <a class="link pointer usn dim white pv2 ph3 mr3">About</a>
-      <a class="link pointer usn dim white pv2 ph3 mr3">Projects</a>
-      <a class="link pointer usn dim white pv2 ph3 mr3">Blog</a>
-      <a class="link pointer usn dim white bg-black ba bw1 br-pill pv2 ph3 mr4">Resume</a>
-    </nav>
   </header>
-  <main>
+  <main class="w-two-thirds bg-near-white">
+    <section class="pv5"></section>
 
+    <section class="bg-white flex justify-center items-center pv5">
+      <img class="photo ba bw2 b--near-black mr5" src="https://cdn.some.pics/raymperry/691ca0db9fba1.jpg"
+        alt="Picture of me" />
+      <div class="description w-50 tj">
+        <h3 class="dark-blue">Hello!</h3>
+        <p>My name is Ray. I'm currently a senior software engineer and I've been doing professional web development for
+          the last 17 years (needed a work permit and everything). Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit. Quisque ornare quam risus, blandit blandit magna pharetra in. Etiam lacinia
+          nibh ac sem consectetur aliquet. Cras ullamcorper tellus quis sapien dignissim placerat.</p>
+
+        <p>Sed pharetra nisi non dignissim hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia
+          nostra, per inceptos himenaeos.
+          Morbi ultrices libero velit, ac convallis urna efficitur vel. Nullam vel dui ac lorem egestas pulvinar in et
+          turpis.</p>
+        <div class="links flex justify-between"></div>
+      </div>
+    </section>
+    <section class="bg-white"></section>
   </main>
+  <footer class="flex justify-center items-center ph4 pv3 bg-near-black near-white w-100">
+    And, that's it.
+  </footer>
 </body>
 
 </html>
